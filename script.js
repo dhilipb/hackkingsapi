@@ -12,29 +12,26 @@ jQuery(document).ready(function() {
 		api_section.find(".expand-collapse-icon").toggleClass("expand");
 	});
 
+	$.get("https://raw.githubusercontent.com/dhilipb/hackkingsapi/master/portfolio-analysis.html", function(html) {
+		if (html != $("#api-portfolio-analysis").html()) {
+			$("#api-portfolio-analysis").html(html);
+		}
+	});
+	$.get("https://raw.githubusercontent.com/dhilipb/hackkingsapi/master/performance-data.html", function(html) {
+		if (html != $("#api-performance-data").html()) {
+			$("#api-performance-data").html(html);
+		}
+	});
+	$.get("https://raw.githubusercontent.com/dhilipb/hackkingsapi/master/search-securities.html", function(html) {
+		if (html != $("#api-search-securities").html()) {
+			$("#api-search-securities").html(html);
+		}
+	});
+	$.get("https://raw.githubusercontent.com/dhilipb/hackkingsapi/master/security-data.html", function(html) {
+		if (html != $("#api-security-data").html()) {
+			$("#api-security-data").html(html);
+		}
+	});
 
-
-	setInterval(function() {
-		$.get("http://localhost:7000/portfolio-analysis.html", function(html) {
-			if (html != $("#api-portfolio-analysis").html()) {
-				$("#api-portfolio-analysis").html(html);
-			}
-		});
-		$.get("http://localhost:7000/performance-data.html", function(html) {
-			if (html != $("#api-performance-data").html()) {
-				$("#api-performance-data").html(html);
-			}
-		});
-		$.get("http://localhost:7000/search-securities.html", function(html) {
-			if (html != $("#api-search-securities").html()) {
-				$("#api-search-securities").html(html);
-			}
-		});
-		$.get("http://localhost:7000/security-data.html", function(html) {
-			if (html != $("#api-security-data").html()) {
-				$("#api-security-data").html(html);
-			}
-		});
-	}, 5000);
 });
 
