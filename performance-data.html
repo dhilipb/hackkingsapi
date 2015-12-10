@@ -1,0 +1,88 @@
+<div class="api-description">
+    <p>Performance Data captures the loss & gains of securities over a given period. Key performance data points include rates of returns, which is your profit on your investment over a specified period of time.</p>
+    <p>Use cases: Performance data gives you key insights into securities with strong and weak performance – as a portfolio manager you may want to see your top 10 performing assets over the past three months</p>
+</div>
+<div class="api-example">
+    <div class="entry-content">
+        <h3>API Example</h3>
+        <div class="lang-samples">
+            <ul class="nav">
+                <li class="active">
+                    <a href="javascript:void(0)" data-tab-id="curl" data-toggle="tab">
+                        <img class="lang-logo" src="https://algorithmia.com/versioned/images/langs/0a585e6120ed581946ed568fc9cdd363-curl.png">
+                        <div>cURL</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" data-tab-id="java" data-toggle="tab">
+                        <img class="lang-logo" src="https://algorithmia.com/versioned/images/langs/3d99cd4df7119b682932be775a66f229-java.png">
+                        <div>Java</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" data-tab-id="javascript" data-toggle="tab">
+                        <img class="lang-logo" src="https://algorithmia.com/versioned/images/langs/23b8b718bbac1bbc3fa68ec4e6e0ca48-javascript.png">
+                        <div>JavaScript</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" data-tab-id="python" data-toggle="tab">
+                        <img class="lang-logo" src="https://algorithmia.com/versioned/images/langs/cf2f35f0cfa906c62fe2009b38f4c5e4-python.png">
+                        <div>Python</div>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane curl active">
+                    <pre>cURL content</pre>
+                </div>
+                <div class="tab-pane java">
+                    <pre>Java Content</pre>
+                </div>
+                <div class="tab-pane javascript">
+                    <pre>JS Content</pre>
+                </div>
+                <div class="tab-pane python">
+                    <pre>import requests
+
+"""
+For the examples we are using 'requests' which is a popular minimalistic python library for making HTTP requests.
+Please use 'pip install requests' to add it to your python libraries.
+"""
+
+performanceDataRequest = requests.get("https://test3.blackrock.com/tools/hackathon/performance", auth=auth, params={'identifiers':"IXN"}, proxies=proxies)
+performanceDataRequest.text # get in text string format
+performanceDataRequest.json # get as json object</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="api-docs">
+    <h3>API Documentation</h3>
+    <div class="api-documentation">
+         <table>
+            <tr>
+                <th colspan="2">Required Parameters</th>
+            </tr>
+            <tr>
+                <td>identifiers</td>
+                <td>Specify the securities for which you would like information. E.g.:'IXN,GS'</td>
+            </tr>
+            <tr>
+                <th colspan="2">Optional Parameters</th>
+            </tr>
+            <tr><td>includePositionReturns</td><td>Checks if it should calculate the historic returns. E.g.: true, false</td></tr>
+            <tr><td>returnsType</td><td>Checks if it should return DAILY or MONTHLY returns E.g.: DAILY,MONTHLY</td></tr>
+            <tr><td>startDate</td><td>A string that represents the start date of the analytics. E.g.: 20151212 </td></tr>
+            <tr><td>endDate</td><td>A string that represents the end date of the analytics. E.g.: 20151212</td></tr>
+
+        </table>
+    </div>
+</div>
+
+
+
+<div class="align-right">
+    <button><a href="https://test3.blackrock.com/tools/api-tester/hackathon?apiType=performanceData" target="_blank">View API Playground</a></button>
+</div>
