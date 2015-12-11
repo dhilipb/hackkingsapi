@@ -67,7 +67,7 @@ For the examples we are using 'requests' which is a popular minimalistic python 
 Please use 'pip install requests' to add it to your python libraries.
 """
 
-portfolioAnalysisRequest = requests.get("https://test3.blackrock.com/tools/hackathon/search-securities")
+portfolioAnalysisRequest = requests.get("https://test3.blackrock.com/tools/hackathon/search-securities", params= {'identifiers':"IXN,GS"})
 portfolioAnalysisRequest.text # get in text string format
 portfolioAnalysisRequest.json # get as json object</pre>
                         </div>
