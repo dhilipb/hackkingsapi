@@ -75,19 +75,22 @@ h2 .expand-collapse-icon.expand {
     float: left;
     text-align: center;
     padding: 0 20px;
+    opacity: .3;
+    border-bottom: 2px solid #ccc;
+    margin-right: 5px;
+}
+
+.nav li.active, .nav li:hover {
+    opacity: 1;
 }
 
 .nav li .lang-logo {
     width: 45px;
-    opacity: .3;
-}
-
-.nav li.active .lang-logo {
-    opacity: 1;
 }
 
 .nav div {
-    font-size: 14px;
+    font-size: 12px;
+    margin: -5px 0 2px 0;
 }
 
 .nav a {
