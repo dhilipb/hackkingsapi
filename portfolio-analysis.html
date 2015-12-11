@@ -37,28 +37,29 @@
 import java.io.*;
 
 public class HackKingsAPIReader {
-public String readPortfolioAnalysis(String positions) throws Exception {
-String urlString = "https://test3.blackrock.com/tools/hackathon/portfolio-analysis";
-urlString += "?positions=" + positions;
-URL url = new URL(urlString);
-URLConnection urlConnection = url.openConnection();
-BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(
-                          urlConnection.getInputStream()));
-String inputLine;
-while ((inputLine = bufferedReader.readLine()) != null)
-  System.out.println(inputLine);
-bufferedReader.close();
-}
+    public String readData(String positions) throws Exception {
+        String urlString = "https://test3.blackrock.com/tools/hackathon/portfolio-analysis";
+        urlString += "?positions=" + positions;
 
-public static void main(String[] args) {
-HackKingsAPIReader apiReader = new HackKingsAPIReader();
-apiReader.readPortfolioAnalysis("BLK~25|AAPL~25|IXN~25|MALOX~25");
-}
+        URL url = new URL(urlString);
+        URLConnection urlConnection = url.openConnection();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+        String inputLine;
+        while ((inputLine = bufferedReader.readLine()) != null) {
+            System.out.println(inputLine);
+        }
+        bufferedReader.close();
+    }
+
+    public static void main(String[] args) {
+        HackKingsAPIReader apiReader = new HackKingsAPIReader();
+        apiReader.readData("BLK~25|AAPL~25|IXN~25|MALOX~25");
+    }
 }</pre>
               </div>
               <div class="tab-pane javascript">
-                  <pre>jQuery.get("https://test3.blackrock.com/tools/hackathon/portfolio-analysis",
-{"positions": "BLK~25|AAPL~25|IXN~25|MALOX~25"}, function(response) {
+                  <pre>jQuery.get("https://test3.blackrock.com/tools/hackathon/portfolio-analysis", {"positions": "BLK~25|AAPL~25|IXN~25|MALOX~25"},
+            function(response) {
 // Do something with response
 });</pre>
               </div>

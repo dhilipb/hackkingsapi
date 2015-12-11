@@ -37,21 +37,21 @@
 import java.io.*;
 
 public class HackKingsAPIReader {
-    public String readSearchSecurities() throws Exception {
+    public String readData() throws Exception {
         String urlString = "https://test3.blackrock.com/tools/hackathon/security-data";
         URL url = new URL(urlString);
         URLConnection urlConnection = url.openConnection();
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(
-                                    urlConnection.getInputStream()));
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
         String inputLine;
-        while ((inputLine = bufferedReader.readLine()) != null)
+        while ((inputLine = bufferedReader.readLine()) != null) {
             System.out.println(inputLine);
+        }
         bufferedReader.close();
     }
 
     public static void main(String[] args) {
         HackKingsAPIReader apiReader = new HackKingsAPIReader();
-        apiReader.readSearchSecurities();
+        apiReader.readData();
     }
 }</pre>
                         </div>
