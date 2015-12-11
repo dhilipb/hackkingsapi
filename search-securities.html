@@ -1,83 +1,132 @@
 <div class="api-description">
-    <p>This API gives you a broader range of security attributes than Security Data.</p>
-</div>
-<div class="api-example">
-    <div class="entry-content">
-        <h3>API Example</h3>
-        <div class="lang-samples">
-            <ul class="nav">
-                <li class="active">
-                    <a href="javascript:void(0)" data-tab-id="curl" data-toggle="tab">
-                        <img class="lang-logo" src="http://i.imgur.com/lhA8ioQ.png">
-                        <div>cURL</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" data-tab-id="java" data-toggle="tab">
-                        <img class="lang-logo" src="http://i.imgur.com/JoH2tk0.png">
-                        <div>Java</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" data-tab-id="javascript" data-toggle="tab">
-                        <img class="lang-logo" src="http://i.imgur.com/oVpYs2c.png">
-                        <div>JavaScript</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" data-tab-id="python" data-toggle="tab">
-                        <img class="lang-logo" src="http://i.imgur.com/LqbV8F0.png">
-                        <div>Python</div>
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane curl active">
-                    <pre>cURL content</pre>
-                </div>
-                <div class="tab-pane java">
-                    <pre>Java Content</pre>
-                </div>
-                <div class="tab-pane javascript">
-                    <pre>JS Content</pre>
-                </div>
-                <div class="tab-pane python">
-                    <pre>import requests
+            <p>This API gives you a broader range of security attributes than Security Data.</p>
+        </div>
+        <div class="api-example">
+            <div class="entry-content">
+                <h3>API Example</h3>
+                <div class="lang-samples">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="javascript:void(0)" data-tab-id="curl" data-toggle="tab"><img class="lang-logo" src="http://i.imgur.com/lhA8ioQ.png">
+                                <div>cURL</div>
+                            </a>
+                            <p>
+                                <a href="javascript:void(0)" data-tab-id="curl" data-toggle="tab"></a>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-tab-id="java" data-toggle="tab"><img class="lang-logo" src="http://i.imgur.com/JoH2tk0.png">
+                                <div>Java</div>
+                            </a>
+                            <p>
+                                <a href="javascript:void(0)" data-tab-id="java" data-toggle="tab"></a>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-tab-id="javascript" data-toggle="tab"><img class="lang-logo" src="http://i.imgur.com/oVpYs2c.png">
+                                <div>JavaScript</div>
+                            </a>
+                            <p>
+                                <a href="javascript:void(0)" data-tab-id="javascript" data-toggle="tab"></a>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-tab-id="python" data-toggle="tab"><img class="lang-logo" src="http://i.imgur.com/LqbV8F0.png">
+                                <div>Python</div>
+                            </a>
+                            <p>
+                                <a href="javascript:void(0)" data-tab-id="python" data-toggle="tab"></a>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane curl active">
+                            <pre>curl -i -H "Accept: application/json" -H "Content-Type: application/json"
+-X GET https://test3.blackrock.com/tools/hackathon/search-securities?positions=BLK~25|AAPL~25|IXN~25|MALOX~25</pre>
+                        </div>
+                        <div class="tab-pane java">
+                            <pre>import java.net.*;
+import java.io.*;
+
+public class HackKingsAPIReader {
+    public String readSearchSecurities() throws Exception {
+        String urlString = "https://test3.blackrock.com/tools/hackathon/search-securities";
+        URL url = new URL(urlString);
+        URLConnection urlConnection = url.openConnection();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(
+                                    urlConnection.getInputStream()));
+        String inputLine;
+        while ((inputLine = bufferedReader.readLine()) != null)
+            System.out.println(inputLine);
+        bufferedReader.close();
+    }
+
+    public static void main(String[] args) {
+        HackKingsAPIReader apiReader = new HackKingsAPIReader();
+        apiReader.readSearchSecurities();
+    }
+}</pre>
+                        </div>
+                        <div class="tab-pane javascript">
+                            <pre>jQuery.get("https://test3.blackrock.com/tools/hackathon/search-securities", function(response) {
+// Do something with response
+});</pre>
+                        </div>
+                        <div class="tab-pane python">
+                            <pre>import requests
 
 """
 For the examples we are using 'requests' which is a popular minimalistic python library for making HTTP requests.
 Please use 'pip install requests' to add it to your python libraries.
 """
 
-searchSecuritiesRequest = requests.get("https://test3.blackrock.com/tools/hackathon/search-securities", auth=auth, proxies=proxies)
-searchSecuritiesRequest.text # get in text string format
-searchSecuritiesRequest.json # get as json object</pre>
+portfolioAnalysisRequest = requests.get("https://test3.blackrock.com/tools/hackathon/search-securities")
+portfolioAnalysisRequest.text # get in text string format
+portfolioAnalysisRequest.json # get as json object</pre>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="api-docs">
-    <h3>API Documentation</h3>
-    <div class="api-documentation">
-        <table>
-            <tr>
-                <th colspan="2">Required Parameters</th>
-            </tr>
-            <tr>
-                <td>identifiers</td>
-                <td>Specify the securities for which you would like information. E.g.:'IXN,GS'</td>
-            </tr>
-            <tr>
-                <th colspan="2">Optional Parameters</th>
-            </tr>
-            <tr><td>fromDate</td><td>A string that represents the start date of the analytics E.g.:20151212</td></tr>
-            <tr><td>toDate</td><td>A string that represents the end date of the analytics E.g.:20151212</td></tr>
-        </table>
-    </div>
-</div>
-
-
-<div class="align-right">
-    <button><a href="https://test3.blackrock.com/tools/api-tester/hackathon?apiType=searchTickers" target="_blank">View API Playground</a></button>
-</div>
+        <div class="api-docs">
+            <h3>API Documentation</h3>
+            <div class="api-documentation">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Required Parameters
+                                <br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>identifiers
+                            </td>
+                            <td>Specify the securities for which you would like information.
+                                <br>E.g.: ‘IXN,GS’
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Optional Parameters
+                                <br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>fromDate
+                            </td>
+                            <td>A string that represents the start date of the analytics
+                                <br>E.g.: 20151212
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>toDate
+                            </td>
+                            <td>A string that represents the end date of the analytics
+                                <br>E.g.: 20151212</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p>For complete documentation and to test this service, please <a href="https://test3.blackrock.com/tools/api-tester/hackathon?apiType=searchTickers" target="_blank">click here.</a></p>
