@@ -30,7 +30,7 @@
           </ul>
           <div class="tab-content">
               <div class="tab-pane curl active">
-                  <pre>curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET "https://test3.blackrock.com/tools/hackathon/portfolio-analysis?positions=BLK~25|AAPL~25|IXN~25|MALOX~25"</pre>
+                  <pre>curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET "https://www.blackrock.com/tools/hackathon/portfolio-analysis?positions=BLK~25|AAPL~25|IXN~25|MALOX~25"</pre>
               </div>
               <div class="tab-pane java">
                   <pre>import java.net.*;
@@ -38,7 +38,7 @@ import java.io.*;
 
 public class HackKingsAPIReader {
     public String readData(String positions) throws Exception {
-        String urlString = "https://test3.blackrock.com/tools/hackathon/portfolio-analysis";
+        String urlString = "https://www.blackrock.com/tools/hackathon/portfolio-analysis";
         urlString += "?positions=" + positions;
 
         URL url = new URL(urlString);
@@ -58,7 +58,7 @@ public class HackKingsAPIReader {
 }</pre>
               </div>
               <div class="tab-pane javascript">
-                  <pre>jQuery.get("https://test3.blackrock.com/tools/hackathon/portfolio-analysis", {"positions": "BLK~25|AAPL~25|IXN~25|MALOX~25"},
+                  <pre>jQuery.get("https://www.blackrock.com/tools/hackathon/portfolio-analysis", {"positions": "BLK~25|AAPL~25|IXN~25|MALOX~25"},
             function(response) {
   // Do something with response
   console.log(response);
@@ -72,7 +72,7 @@ For the examples we are using 'requests' which is a popular minimalistic python 
 Please use 'pip install requests' to add it to your python libraries.
 """
 
-portfolioAnalysisRequest = requests.get("https://test3.blackrock.com/tools/hackathon/portfolio-analysis", params={'positions' : 'BLK~25|AAPL~25|IXN~25|MALOX~25'})
+portfolioAnalysisRequest = requests.get("https://www.blackrock.com/tools/hackathon/portfolio-analysis", params={'positions' : 'BLK~25|AAPL~25|IXN~25|MALOX~25'})
 portfolioAnalysisRequest.text # get in text string format
 portfolioAnalysisRequest.json # get as json object</pre>
               </div>
@@ -177,4 +177,4 @@ portfolioAnalysisRequest.json # get as json object</pre>
       </table>
   </div>
 </div>
-<p>For complete list of variables and to test this service, please <a href="https://test3.blackrock.com/tools/api-tester/hackathon?apiType=portfolioAnalysis" target="_blank">click here.</a></p>
+<p>For complete list of variables and to test this service, please <a href="https://www.blackrock.com/tools/api-tester/hackathon?apiType=portfolioAnalysis" target="_blank">click here.</a></p>
