@@ -1,15 +1,8 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 
-/*
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
-/* Reset */
-
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, .bodybody, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -22,7 +15,7 @@
 		display: block;
 	}
 
-	body {
+	.bodybody {
 		line-height: 1;
 	}
 
@@ -44,7 +37,7 @@
 		border-spacing: 0;
 	}
 
-	body {
+	.bodybody {
 		-webkit-text-size-adjust: none;
 	}
 
@@ -1791,11 +1784,11 @@
 
 /* Basic */
 
-	body {
+	.bodybody {
 		background: #f5f5f5;
 	}
 
-	body, input, select, textarea {
+	.bodybody, input, select, textarea {
 		color: #777;
 		font-family: "Source Sans Pro", sans-serif;
 		font-size: 16pt;
@@ -2753,7 +2746,7 @@
 		padding-top: 3em;
 	}
 
-	body.landing #page-wrapper {
+	.bodybody .landing #page-wrapper {
 		padding-top: 0;
 	}
 
@@ -3028,7 +3021,7 @@
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
+		background-attachment: scroll,				fixed;
 		background-color: #666;
 		background-image:url("../../images/main.png");
 		background-position:center center;
@@ -3116,7 +3109,7 @@
 				padding: 1em 0 1.25em 0;
 			}
 
-	body.landing #main {
+	.bodybody .landing #main {
 		margin-top: -14em;
 	}
 
@@ -3239,7 +3232,7 @@
 
 		/* Basic */
 
-			body, input, select, textarea {
+			.bodybody, input, select, textarea {
 				font-size: 13pt;
 			}
 
@@ -3257,7 +3250,7 @@
 
 		/* Basic */
 
-			body, input, select, textarea {
+			.bodybody, input, select, textarea {
 				font-size: 11pt;
 			}
 
@@ -3285,7 +3278,7 @@
 
 		/* Basic */
 
-			body, input, select, textarea {
+			.bodybody, input, select, textarea {
 				font-size: 11pt;
 			}
 
@@ -3301,11 +3294,11 @@
 
 		/* Basic */
 
-			html, body {
+			html, .bodybody {
 				overflow-x: hidden;
 			}
 
-			body, input, select, textarea {
+			.bodybody, input, select, textarea {
 				font-size: 11pt;
 			}
 
@@ -3497,21 +3490,21 @@
 						width: 5em;
 					}
 
-			body.navPanel-visible #page-wrapper {
+			.bodybody .navPanel-visible #page-wrapper {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
 				transform: translateX(275px);
 			}
 
-			body.navPanel-visible #navButton {
+			.bodybody .navPanel-visible #navButton {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
 				transform: translateX(275px);
 			}
 
-			body.navPanel-visible #navPanel {
+			.bodybody .navPanel-visible #navPanel {
 				-moz-transform: translateX(0);
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
@@ -3526,7 +3519,7 @@
 
 		/* Basic */
 
-			body, input, select, textarea {
+			.bodybody, input, select, textarea {
 				font-size: 11pt;
 			}
 
@@ -3631,7 +3624,7 @@
 						padding-bottom: 1em;
 					}
 
-			body.landing #main {
+			.bodybody .landing #main {
 				padding: 0;
 				margin-top: 0;
 			}
@@ -3658,11 +3651,11 @@
 
 		/* Basic */
 
-			html, body {
+			html, .bodybody {
 				min-width: 320px;
 			}
 
-			body, input, select, textarea {
+			.bodybody, input, select, textarea {
 				font-size: 11pt;
 			}
 
