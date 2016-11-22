@@ -3824,3 +3824,9 @@ h2 .expand-collapse-icon.expand {
 .api-documentation th {
 	font-weight: bold;
 }
+.api-list-el {
+     margin: 5px;
+     padding: 5px;
+     border:1px solid; 
+     border-radius:10px;
+}
