@@ -7,18 +7,18 @@
     display: none;
 }
 
-h2 {
+.hash2 {
 	font-family: Arial, sans-serif !important;
 	font-size: 26px !important;
 	border-bottom: 1px solid #ccc;
 }
-h2:hover {
+.hash2:hover {
     cursor: pointer;
 }
 h3 {
 	font-family: 22px;
 }
-h2 .expand-collapse-icon.expand {
+.hash2 .expand-collapse-icon.expand {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
@@ -142,9 +142,3 @@ button:hover a {
     text-align: right;
 }
 
-.api-list-el {
-     margin: 50px;
-     padding: 5px;
-     border:1px solid; 
-     border-radius:10px;
-}

@@ -3109,7 +3109,7 @@
 				padding: 1em 0 1.25em 0;
 			}
 
-	.bodybody .landing #main {
+	.landing #main {
 		margin-top: -14em;
 	}
 
@@ -3753,70 +3753,7 @@
 
 	}
 
-h2 .expand-collapse-icon.expand {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-.api-content {
-    height: 0;
-    display: none;
-    overflow: hidden;
-    transition: all 1.0s ease;
-}
-.api-content.expand {
-    display: block;
-    height: auto;
-    overflow: auto;
-    transition: all 1.0s ease;
-}
 
-.api-example {
-    background-color: #eee;
-    padding-bottom: 20px;
-}
-
-.tab-content {
-    background-color: #222222;
-    border-radius: 3px;
-    padding: 10px;
-    clear: both;
-}
-
-.tab-content .tab-pane {
-    display: none;
-}
-
-.tab-content .tab-pane.active {
-    display: block;
-}
-
-.tab-content pre {
-    background: transparent;
-    font-family: Consolas, monospace;
-    font-size: 12px;
-    color: white;
-    padding: 0;
-    margin: 0;
-    overflow: auto !important;
-}
-.api-documentation table {
-	margin: 0;
-}
-.api-documentation th, .api-documentation td {
-	border-top: 1px solid #EEEEEE;
-	border-bottom: 0;
-}
-.api-documentation td {
-	border-left: 1px solid #EEEEEE;
-	padding: 10px;
-	font-size: 13px;
-}
-.api-documentation tr td:first-child {
-	border-left: none;
-}
-.api-documentation th {
-	font-weight: bold;
-}
 .api-list-el {
      margin: 5px;
      padding: 5px;
