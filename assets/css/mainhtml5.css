@@ -3023,8 +3023,8 @@
 	#banner {
 		background-attachment: scroll,				fixed;
 		background-color: #666;
-		background-image:url("../../images/main.png");
-		background-position:center center;
+		background-image:url("https://github.com/dhilipb/hackkingsapi/blob/master/images/main.png?raw=true");
+		background-position:center center;f
 		background-repeat:no-repeat;
 		background-size:cover;
 		color: #fff;
