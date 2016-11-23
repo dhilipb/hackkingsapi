@@ -9,8 +9,9 @@
 
 .hash2 {
 	font-family: Arial, sans-serif !important;
-	font-size: 26px !important;
-	border-bottom: 1px solid #ccc;
+	font-size: 15px !important;
+    margin-bottom: 0px;
+    padding:5px;
 }
 .hash2:hover {
     cursor: pointer;
@@ -125,11 +126,11 @@ h3 {
 
 .expand-collapse-icon {
     float: right;
-    margin-top: 10px;
+    margin-top: 0px;
     background-image: url("http://i.imgur.com/kNq8Vkf.png");
     background-position: center center;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 button a {
