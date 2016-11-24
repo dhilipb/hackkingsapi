@@ -1,5 +1,5 @@
 .page-cover {
-	display: none;
+    display: none;
 }
 
 .post-navigation,
@@ -7,19 +7,18 @@
     display: none;
 }
 
-.hash2 {
-	font-family: Arial, sans-serif !important;
-	font-size: 15px !important;
-    margin-bottom: 0px;
-    padding:5px;
+h2 {
+    font-family: Arial, sans-serif !important;
+    font-size: 26px !important;
+    border-bottom: 1px solid #ccc;
 }
-.hash2:hover {
+h2:hover {
     cursor: pointer;
 }
 h3 {
-	font-family: 22px;
+    font-family: 22px;
 }
-.hash2 .expand-collapse-icon.expand {
+h2 .expand-collapse-icon.expand {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
@@ -106,31 +105,31 @@ h3 {
 }
 
 .api-documentation table {
-	margin: 0;
+    margin: 0;
 }
 .api-documentation th, .api-documentation td {
-	border-top: 1px solid #EEEEEE;
-	border-bottom: 0;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 0;
 }
 .api-documentation td {
-	border-left: 1px solid #EEEEEE;
-	padding: 10px;
-	font-size: 13px;
+    border-left: 1px solid #EEEEEE;
+    padding: 10px;
+    font-size: 13px;
 }
 .api-documentation tr td:first-child {
-	border-left: none;
+    border-left: none;
 }
 .api-documentation th {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .expand-collapse-icon {
     float: right;
-    margin-top: 0px;
+    margin-top: 10px;
     background-image: url("http://i.imgur.com/kNq8Vkf.png");
     background-position: center center;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 button a {
@@ -142,4 +141,3 @@ button:hover a {
 .align-right {
     text-align: right;
 }
-
