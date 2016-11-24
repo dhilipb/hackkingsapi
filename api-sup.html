@@ -1,0 +1,140 @@
+<style type="text/css">
+    @import url("https://rawgit.com/dhilipb/hackkingsapi/master/style.css");
+    @import url("https://rawgit.com/dhilipb/hackkingsapi/master/assets/css/mainhtml5.css");
+
+</style>
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/mainhtml5.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+ -->
+
+<div class="bodybody landing" >
+<div id="page-wrapper" style="padding-top:0px;">
+    <section id="banner">
+        <h2>Hackathon API</h2>
+        <p>by BlackRock</p>
+        <ul class="actions">
+            <li><a href="#faxeschallenge" class="button special">I'm here for the fun</a></li>
+            <li><a href="#oldapi" class="button">I'm a GOD</a></li>
+        </ul>
+    </section>
+    <section id="main" class="container">
+        <section class="box special">
+            <header class="major">
+                <h2>Introducing the ultimate Hackathon API
+                </h2>
+                <p>
+                    <b>BlackRock</b> takes pride in engineering innovative solutions for the investment management industry by putting data at the core. For the first time we are exposing some of our core datasets to see what you can build - data ranging from portfolio analytics & risk, security information, performance data.
+                </p>
+            </header>
+        </section>
+        <div class="row">
+            <div class="12u 12u(narrower)">
+                <section class="box special" id="faxeschallenge">
+                    <h2><b>What the FAX is going on?</b></h2>
+                    <hr>
+                    <h4>As citizens, we all have a bank account where we hold some of our money. For us to easily interact with that money, banks have created cards. By using a card, we can interact with our account to withdraw or deposit money without any struggles. As an Asset Manager, BlackRock is responsible for managing money on behalf of its clients. Our clients create Investment Accounts with BlackRock where they deposit the initial sum of money they want us to invest.
+                    <br/>As an account owner, clients are entitled to deposit money into their accounts, called <u>subscription</u>, or withdraw money from their accounts, called <u>redemption</u>. One of the ways in which clients can subscribe or redeem is by sending BlackRock a <b>fax message</b> with their investment instructions.
+                    </h4>
+                    <p class="phash">
+                        <h3>
+                            Why would clients use fax messages?
+                        </h3>
+                        <h4>The reason they choose to send faxes is because faxes with two signatures are legally binding and provide authorisation for this type of transaction.</h4>
+                    </p>
+                    <div class="api-section api-list-el">
+                        <h2 class="hash2">Ok, fine. What is on a fax?
+                            <span class="expand-collapse-icon expand"></span>
+                        </h2>
+                        <div class="api-content">
+                            <p>
+                                Faxes are different from client to client. There is not a standard layout we receive in. However, there are various amounts of information included that are common across faxes. <br/><u>These are:</u>
+                                <br/>-The client's name-
+                                <br/>-Two different signatures from the client-
+                                <br/>-The investment instruction: deposit money (subscription) or withdraw money (redemption)-
+                                <br/>-The amount of money-
+                                <br/>-The name and code of the fund - this says the type of investment they are making -
+                                <br/>-What region, what industry etc.-
+                                <br/>-Bank details of where the money is coming from/to-
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="api-section api-list-el">
+                        <h2 class="hash2">So what happens when BlackRock receives a fax message?
+                            <span class="expand-collapse-icon expand"></span>
+                        </h2>
+                        <div class="api-content">
+                            <p>When these faxes are received in BlackRock, somebody within the 'Client Order Management' team will get this fax in their email as an image and analyse it. They will check if the signatures are different and enter all the information (listed above) into the investment system to successfully complete the transaction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="api-section api-list-el">
+                        <h2 class="hash2"><i class="fa fa-trophy" aria-hidden="true"></i> CRITERIA FOR WINNING <i class="fa fa-trophy" aria-hidden="true"></i>
+                            <span class="expand-collapse-icon expand"></span>
+                        </h2>
+                        <div class="api-content">
+                            <p>The <b>challenge</b> we are setting is: Use our API to get these faxes and see what you can do.<br/><b>INNOVATIVE</b> implementations are what we look for, the world is your oyster!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="api-section api-list-el">
+                        <h2 class="hash2"><i class="fa fa-gift" aria-hidden="true"></i> PRIZE <i class="fa fa-gift" aria-hidden="true"></i>
+                            <span class="expand-collapse-icon expand"></span>
+                        </h2>
+                        <div class="api-content">
+                            <p>The winning team will win Amazon Vouchers worth <i class="fa fa-eur" aria-hidden="true"></i>400 to split between its members.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="12u 12u(narrower)">
+                <section class="box special" id="fullapi">
+                    <h2><b>Beast Mode</b></h2>
+                    <hr>
+                    <h4>Show us what you've got by testing our full mode api. The BlackRock API gives you the following key financial data sets at your finger tips:
+                    </h4>
+                    <div class="api-section api-list-el">
+                        <h2 class="hash2">Portfolio Analysis <span class="expand-collapse-icon expand"></span></h2>
+                        <div id="api-portfolio-analysis" class="api-content"></div>
+                    </div>
+
+                    <div class="api-section api-list-el">
+                        <h2 class="hash2">Security Data <span class="expand-collapse-icon expand"></span></h2>
+                        <div id="api-security-data" class="api-content"></div>
+                    </div>
+
+                    <div class="api-section api-list-el">
+                        <h2 class="hash2">Search Securities <span class="expand-collapse-icon expand"></span></h2>
+                        <div id="api-search-securities" class="api-content"></div>
+                    </div>
+
+                    <div class="api-section api-list-el">
+                        <h2 class="hash2">Performance Data <span class="expand-collapse-icon expand"></span></h2>
+                        <div id="api-performance-data" class="api-content"></div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li><small>NOTE: Currently the the financial data provided is only related to US. However this includes stocks, ETFs, mutual funds and index tickers.</small></li>
+        </ul>
+        <ul class="copyright">
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+</div>
+
+
+</div>
+<script type="text/javascript" src="https://rawgit.com/dhilipb/hackkingsapi/master/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://rawgit.com/dhilipb/hackkingsapi/master/assets/js/main.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="https://rawgit.com/dhilipb/hackkingsapi/master/assets/js/skel.min.js"></script>
