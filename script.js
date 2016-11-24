@@ -13,9 +13,9 @@ jQuery(document).ready(function() {
         api_section.find(".api-content").toggleClass("expand");
         api_section.find(".expand-collapse-icon").toggleClass("expand");
     });
-    // $.get("https://rawgit.com/dhilipb/hackkingsapi/master/api-sup.html", function(response) {
-    //     $("h1").html(response);
-    // });
+    $.get("https://rawgit.com/dhilipb/hackkingsapi/master/api-sup.html", function(response) {
+        $("h1").html(response);
+    });
     $.get("https://rawgit.com/dhilipb/hackkingsapi/master/portfolio-analysis.html", function(response) {
         $("#api-portfolio-analysis").html(response);
     });
